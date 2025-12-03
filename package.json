@@ -1,0 +1,22 @@
+{
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	},
+	"devDependencies": {
+		"@types/node": "^24.10.1",
+		"@types/react": "17.0.41",
+		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"@apollo/client": "^4.0.9",
+		"@apollo/react-hooks": "^4.0.0",
+		"@heroicons/react": "^2.2.0",
+		"cross-fetch": "^4.1.0",
+		"graphql": "^16.12.0",
+		"next": "^16.0.6",
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0"
+	}
+}
