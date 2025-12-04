@@ -7,6 +7,7 @@ export default function Home() {
     return (
         <main className={styles.container}>
             <LoginForm />
+            <h2>testあああああ</h2>
         </main>
     );
 }

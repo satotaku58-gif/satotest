@@ -22,14 +22,14 @@ export function LoginForm() {
     return (
         <div className={styles.card}>
             <h1 className={styles.title}>
-                ログイン
+                ログインしてね！！！
             </h1>
 
             <form onSubmit={handleLogin}>
                 {/* ID入力欄 */}
                 <div className={styles.formGroup}>
                     <label htmlFor="id" className={styles.label}>
-                        ID
+                        ID！！！！！
                     </label>
                     <input
                         id="id"
