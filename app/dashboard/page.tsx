@@ -34,7 +34,7 @@ export default function Dashboard() {
 
                 <div style={{ marginBottom: '2rem', padding: '1rem', backgroundColor: '#f0f0f0', borderRadius: '8px' }}>
                     <p style={{ marginBottom: '0.5rem' }}>
-                        <strong>ログインユーザ：</strong>
+                        <strong>ログインユーザはこの人です：</strong>
                     </p>
                     <p style={{ fontSize: '1.5rem', color: '#0070f3', marginBottom: 0 }}>
                         {userId}
