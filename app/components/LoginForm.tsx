@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import styles from '../page.module.css';
 
 export function LoginForm() {
+    const router = useRouter();
     const [id, setId] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -36,9 +38,10 @@ export function LoginForm() {
 
             if (response.ok) {
                 setSuccess(data.message);
-                setId('');
-                setPassword('');
-                console.log('Login successful:', data);
+                // ダッシュボードにリダイレクト
+                setTimeout(() => {
+                    router.push(`/dashboard?userId=${id}`);
+                }, 500);
             } else {
                 setError(data.error || 'ログインに失敗しました');
             }
