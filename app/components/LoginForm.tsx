@@ -14,7 +14,7 @@ export function LoginForm() {
         e.preventDefault();
 
         if (!id || !password) {
-            setError('IDとパスワードを入力してくださいね！！！！！！！');
+            setError('IDとパスワードを入力してくださいね');
             return;
         }
 
