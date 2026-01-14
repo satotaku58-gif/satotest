@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PageProvider } from "@/context/pagecontext";
 
 export const metadata: Metadata = {
     title: "Next.js App",
@@ -12,7 +13,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body>{children}</body>
+            <body>
+                <PageProvider>{children}</PageProvider>
+            </body>
         </html>
     );
 }
